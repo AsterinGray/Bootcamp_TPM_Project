@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/member/create', 'MemberController@create');
+Route::post('/member', 'MemberController@store');
