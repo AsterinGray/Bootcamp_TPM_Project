@@ -13,3 +13,5 @@
 
 Route::get('/member/create', 'MemberController@create');
 Route::post('/member', 'MemberController@store');
+Route::resource('members', 'MemberController');
+Route::get('/member/index', 'MemberController@index');
