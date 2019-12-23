@@ -14,7 +14,9 @@ class MemberController extends Controller
      */
     public function index()
     {
-        //
+        $members = \App\Member::paginate(10);
+
+        return view('index', ['members' => $members]);
     }
 
     /**
@@ -35,7 +37,33 @@ class MemberController extends Controller
      */
     public function store(Request $request)
     {
-        Member::create($request->all());
+        $new_member = new \App\Member;
+        $new_member->name = $request->get('name');
+        $new_member->address = $request->get('address');
+        $new_member->email = $request->get('email');
+        $new_member->dob = $request->get('dob');
+        $new_member->phone = $request->get('phone');
+        $new_member->line = $request->get('line');
+        $new_member->git = $request->get('git');
+
+        if($request->file('ktp')){
+            $file = $request -> file('ktp')->store('ktps', 'public');
+            $new_member->ktp = $file;
+        }
+       
+        if($request->file('cv')){
+            $file = $request -> file('cv')->store('cvs', 'public');
+            $new_member->cv = $file;
+        }
+        if($request->file('score')){
+            $file = $request -> file('score')->store('scores', 'public');
+            $new_member->score = $file;
+        }
+
+        $new_member->save();
+        return redirect()->route('members.create')->with('status', 'Member successfully created');
+ 
+
     }
 
     /**

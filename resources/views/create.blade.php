@@ -7,8 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="{{url('product')}}" method="POST">
+    <form action="{{route('members.store')}}" method="POST" enctype="multipart/form-data">
         @csrf
+      @if(session('status'))
+      <div class="alert alert-success">
+      {{session('status')}}
+      </div>
+      @endif
+
         <label>Name</label>
         <input type="text" name="name"/>
         <label>Address</label>
@@ -24,11 +30,11 @@
         <label>Git</label>
         <input type="text" name="git"/>
         <label>KTP</label>
-        <input type="text" name="ktp"/>
+        <input type="file" name="ktp"/>
         <label>CV</label>
-        <input type="text" name="cv"/>
+        <input type="file" name="cv"/>
         <label>Score</label>
-        <input type="text" name="score"/>
+        <input type="file" name="score"/>
         <button type="submit">Save</button>
         
     </form>
