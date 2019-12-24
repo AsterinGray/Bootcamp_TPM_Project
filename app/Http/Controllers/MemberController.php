@@ -61,7 +61,7 @@ class MemberController extends Controller
         }
 
         $new_member->save();
-        return redirect()->route('members.create')->with('status', 'Member successfully created');
+        return redirect()->route('member.create')->with('status', 'Member successfully created');
  
 
     }
@@ -83,9 +83,11 @@ class MemberController extends Controller
      * @param  \App\Member  $member
      * @return \Illuminate\Http\Response
      */
-    public function edit(Member $member)
+    public function edit($id)
     {
-        //
+        $member = \App\Member::findOrFail($id);
+
+        return view('edit', ['member'=> $member]);
     }
 
     /**

@@ -14,6 +14,8 @@
 <thead>
 
 <tr>
+
+        <th>Id</th>
         <th>Name</th>
         <th>Address</th>
         <th>Email</th>
@@ -31,6 +33,8 @@
 <tbody>
 @foreach($members as $member)
 <tr>
+
+        <td>{{$member->id}}</td>
         <td>{{$member->name}}</td>
         <td>{{$member->address}}</td>
         <td>{{$member->email}}/</td>
@@ -62,7 +66,7 @@
         @endif
         </td>
         <td>
-        [TODO: actions]
+        <a href="{{route('members.edit', $member->id)}}">Edit</a>
         </td>
 
 </tr>
