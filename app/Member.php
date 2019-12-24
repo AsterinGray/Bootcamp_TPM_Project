@@ -20,4 +20,11 @@ class Member extends Model
         "score"
 
     ];
+
+    protected $primaryKey = 'id';
+
+    public function leaderOf(Type $var = null)
+    {
+        return $this->belongTo('App\Group');
+    }
 }
