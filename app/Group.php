@@ -8,33 +8,37 @@ class Group extends Model
 {
     protected $fillable = [
         "id",
-        "username",
-        "password",
-        "leader",
-        "member1",
-        "member2",
-        "payment_status",
-        "payment"
-
+        "name",
+        "address",
+        "email",
+        "dob",
+        "phone",
+        "line",
+        "git",
+        "ktp",
+        "cv",
+        "score",
+        "id1",
+        "name1",
+        "address1",
+        "email1",
+        "dob1",
+        "phone1",
+        "line1",
+        "git1",
+        "ktp1",
+        "cv1",
+        "score1",
+        "id2",
+        "name2",
+        "address2",
+        "email2",
+        "dob2",
+        "phone2",
+        "line2",
+        "git2",
+        "ktp2",
+        "cv2",
+        "score2",
     ];
-
-    protected $table = 'users';
-
-    protected $primaryKey = 'id';
-
-    public function leader(){
-
-        return $this->hasOne('App\Member', 'id', 'leader_id');
-    }
-
-    public function member1(){
-
-        return $this->hasOne('App\Member', 'id', 'member1_id');
-    }
-
-    public function member2(){
-
-        return $this->hasOne('App\Member', 'id', 'member2_id');
-    }
-
 }
