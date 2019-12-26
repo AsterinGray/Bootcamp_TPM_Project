@@ -1,0 +1,240 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+/*for navbar*/
+.navsbar{
+  width:100%;
+  display: flex;
+  align-items: center;
+  color:white;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  padding:1em 1em;
+}
+
+.navsbar .gambar > img{
+  width: 10em;
+  height: auto;
+}
+
+.navs-link{
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navs a{
+  padding: 10px 10px;
+  text-decoration: none;
+  margin:0 10px;
+  transition: .4s;
+  color:black;
+  font-weight: bold;
+}
+
+.navs a:hover{
+  background-color:salmon;
+  color:white;
+  margin:0px;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  border-radius: 1em;
+  transition: .4s;
+  text-decoration: none;
+}
+
+.navs span{
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border:1px solid black;
+  border-radius: 1em;
+}
+
+.navs span a{
+  color:black;
+}
+
+.ham-bar{
+  display:none;
+}
+
+.ham{
+  padding: 5px 8px;
+}
+
+.hamburger{
+  width: 2em;
+  height: .3em;
+  background-color: black;
+  margin: .3em 0;
+}
+
+.ham-bar > img{
+  width: 10em;
+  height: auto;
+}
+
+.navs-links{
+  display:none;
+}
+
+.Dashboard{
+  background-color: lightblue;
+}
+
+.Dashboard h1{
+  font-size: 2em;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.UserDashboard{
+  margin: 3.5em;
+}
+
+.team-name{
+  margin: 3.5em;
+  margin-bottom: -1.3em;
+  width: 40%;
+}
+
+.card{
+  margin: 3.5em;
+  padding: 0.2em;
+}
+
+.card p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vh;
+  margin: 1em;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+}
+
+.form-left, .form-right{
+  width: 40%;
+}
+
+.payment{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2em;
+  padding: 1.5em;
+}
+
+  @media only screen and (max-width: 900px)
+  {
+
+    .navsbar >.gambar>img#logo{
+      display:none;
+    }
+    .ham-bar{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding:1em 1em;
+      box-sizing: border-box;
+      transition:1s;
+    }
+    .ham{
+      border:1px solid deepskyblue;
+    }
+    .hamburger{
+      background-color: black;
+    }
+    .navsbar >.gambar>img#logo{
+      display:none;
+    }
+    .navsbar{
+      height:130px;
+      width:100%;
+      overflow: scroll;
+      background-color:none;
+      display: none;
+    }
+    .navs-link{
+      display: flex;
+      flex-direction: column;
+      margin:auto;
+      text-align: center;
+      transition:1s;
+    }
+    .navs-link .navs{
+      margin: .5em 0;
+    }
+    .navs-link .navs a{
+      color:black;
+    }
+    .UserDashboard{
+      margin: 1em;
+    }
+  }
+  @media only screen and (max-width: 600px) 
+  {
+    .ham-bar{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding:1em 1em;
+      box-sizing: border-box;
+      background-color: white;
+      transition:.8s;
+    }
+    .ham{
+      border: 0;
+    }
+    .hamburger{
+      background-color: black;
+    }
+    .navsbar >.gambar>img{
+      display:none;
+    }
+    .navsbar{
+      width:100%;
+      overflow: scroll;
+      display:none;
+    }
+    .navs-link{
+      display: flex;
+      flex-direction: column;
+      margin:auto;
+      text-align: center;
+      background-color: white;
+      transition:1s;
+    }
+    .Dashboard h1{
+      margin: 1em;
+    }
+    .navs-link .navs a:hover{
+      color:white;
+    }
+    .UserDashboard{
+      margin: 0.1em;
+    }
+    .team-name{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+    }
+    .form-left, .form-right{
+      width: 80%;
+    }
+  }

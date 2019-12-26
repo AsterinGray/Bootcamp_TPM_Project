@@ -1,0 +1,93 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+/*for fonts*/
+
+@font-face {
+	font-family: "Fontania";
+	src:url('../assets/Fontania.ttf') format('truetype');
+}
+
+.area {
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #86d8f7;
+}
+
+.Login-Regis{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 5px 10px 10px lightgray;
+    margin: 5% 0;
+}
+
+.Login-Regis img{
+    padding: 1em 0;
+    width: 100%;
+}
+
+.box-input{
+    display: flex;
+    flex-direction: row;
+}
+
+.box-input img{
+    width: 2em;
+    margin: 0 .5em;
+}
+
+.extra{
+    width: 20em;
+    padding: .5em 1em;
+}
+
+.extra img{
+    width: 100%;
+}
+
+
+.form{
+    width: 25em;
+    padding: 1.5em 1em;
+    margin: 1em;
+    text-align: left;
+}
+
+.form h1 h3 {
+    margin: .5em .2em;
+}
+
+.form h1{
+    font-family: Fontania;
+    text-align: center;
+}
+
+.form button{
+    margin: 1em;
+}
+
+@media only screen and (max-width: 900px){
+    .area{
+        text-align: center;
+        padding: 2em;
+    }
+
+    .Login-Regis{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .form{
+        font-size: 15px;
+    }
+}
