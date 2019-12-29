@@ -7,6 +7,10 @@ html,body{
 	background-color: #e6e7e8;
 }
 
+body p{
+	font-size: 1.2rem;
+}
+
 /*for fonts*/
 
 @font-face {
@@ -136,12 +140,18 @@ html,body{
 }
 .title{
 	font-family: Fontania;
-	width: 45%;
+	width: 50%;
 	text-align: left;
 }
 
 .title h1{
-	margin: .5em;
+	/* margin: .5em; */
+	font-size: 3em;
+}
+
+title h1{
+	margin: 0;
+	font-size: 2em;
 }
 
 .title img{
@@ -211,6 +221,31 @@ html,body{
 	padding: 1.5em 0;
 }
 
+.bncc{
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+}
+
+.bncc h1{
+	font-family: "Fontania";
+	font-size: 3rem;
+	border-bottom: 5px solid deepskyblue;
+	margin: 1em 0	;
+}
+
+.bncc p{
+	width: 80%;
+	text-align: center;
+}
+
+.bncc img{
+	width: 30%;
+}
+
 .why{
 	background-color: white;
 	display: flex;
@@ -241,6 +276,10 @@ html,body{
 	height: auto;
 	box-shadow: 1em 1em 1em #e2e2e2;
 	margin: 0 1em;
+}
+
+.carousel-indicators li{
+    box-shadow: inset 1px 1px 1px 1px #00afef; 
 }
 
 .carousel-inner{
@@ -475,7 +514,7 @@ button.faq-title:hover, button.faq-title.is-open{
 	padding: 60px;
 	display: flex;
 	flex-direction: column;
-	background-color: #66e1ff;
+	background-color: #00afef;
 	box-shadow: .5em .5em .5em lightblue;
 }
 

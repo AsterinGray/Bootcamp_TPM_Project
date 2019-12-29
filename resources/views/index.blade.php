@@ -35,8 +35,8 @@
 			<div class="navs"><a href="#Sponsor">Sponsor</a></div>
 			<div class="navs"><a href="#FAQs">FAQ</a></div>
 			<div class="navs"><a href="#Contact-us">Contact Us</a></div>
-			<div class="navs"><a href="{{url('login')}}">Login</a></div>
-			<div class="navs" id="Regis"><a href="{{url('regis')}}">Sign Up</a></div>
+			<div class="navs"><a href="Login.html">Login</a></div>
+			<div class="navs" id="Regis"><a href="Registration.html">Sign Up</a></div>
 		</div>
 	</div>
 	<div class="container">
@@ -55,7 +55,6 @@
 	</div>
 </section>
 
-
 <section class="landing" id="About">
 	<img src="/style/assets/About_illustration1.png" alt="">
 		<div class="text">
@@ -64,8 +63,18 @@
 				<div class="kotak"></div>
 			</div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In laboriosam dolores distinctio sunt porro unde error, veritatis, autem, quibusdam excepturi aperiam ea eius ipsa. Ex tempore numquam, error laborum molestiae?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae nulla voluptatum</p>
-			<p>perspiciatis fugiat sequi ratione cupiditate, perferendis nostrum ipsam, saepe reprehenderit tenetur recusandae libero omnis iusto ipsa ducimus, quibusdam blanditiis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A culpa voluptatem, maxime</p> 
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus amet ratione quo soluta doloribus possimus, recusandae hic vitae commodi sapiente quibusdam, atque omnis error delectus eveniet alias voluptatibus fuga aut.</p>
 		</div>
+</section>
+<section class="bncc">
+	<span><h1>What is BNCC ?</h1></span>
+	<p>
+		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore dolores modi eius ipsa a consequatur doloremque autem! Commodi illum, nesciunt excepturi voluptatibus eligendi, inventore voluptatem quos, voluptate magni harum illo unde consequatur repudiandae praesentium ratione expedita quasi tenetur. Ipsam nesciunt voluptatem quidem illum molestiae ullam rerum iusto sapiente tempore nulla dolorem, consequatur alias atque quis officiis at ipsum. Magni sequi iste suscipit possimus quam! Pariatur optio inventore cupiditate earum nulla.
+	</p>
+	<img src="/style/assets/BNCC.png" alt="">
+	<p>
+		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident animi, perspiciatis natus quam doloribus vel? Atque adipisci nostrum magnam. Voluptas delectus facilis quidem praesentium accusantium ea eum, enim eveniet rerum culpa omnis, minima quisquam hic velit neque molestias est laudantium aut. Quidem odio, doloribus sunt aliquam, aspernatur voluptatum laudantium cum tempore sit cumque iure omnis molestiae aut. Sunt, labore tempora molestiae beatae fugit asperiores iusto, esse ea eum, ut quos!
+	</p>
 </section>
 <section class="why">
 	<div class="text">
@@ -99,7 +108,7 @@
 		  </div>
 		  <div class="carousel-item">
 			<div class="caro-in">
-				<h3>Bussiness</h3>
+				<h3>Business</h3>
 				<img class="d-block w-100" src="/style/assets/Carousel3.png" alt="First slide">
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quibusdam.</p>
 			  </div>
