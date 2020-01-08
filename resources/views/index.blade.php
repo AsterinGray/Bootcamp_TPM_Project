@@ -10,11 +10,15 @@
 	<link rel="stylesheet" href="/style/styles/style.css">
 	<link rel="stylesheet" href="/style/Bootstrap/css/bootstrap.min.css">
 
-</head>
+	</head>
 <body>
+<div class="loader">
+	<img src="/style/assets/Bootcamp.png" alt="">
+	<h1>A MOUNTAIN OF EXPERIENCES AWAITS YOU</h1>
+</div>
 <section class="header" id="Landing">
 	<div class="ham-bar" id="hamburger-bar">
-		<img src="assets/Bootcamp.png" alt="">
+		<img src="/style/assets/Bootcamp.png" alt="">
 		<div class="ham">
 			<div class="hamburger"></div>
 			<div class="hamburger"></div>
@@ -23,22 +27,29 @@
 	</div>
 	<div class="navsbar" id="navbar">
 		<div class="gambar">
-			<img src="assets/Bootcamp.png" alt="" class="logo" id="logo">
+			<img src="/style/assets/Bootcamp.png" alt="Logo" class="logo" id="logo">
 		</div>
 		<div class="navs-link">
 			<div class="navs"><a href="#Landing">Home</a></div>
 			<div class="navs"><a href="#About">About</a></div>
 			<div class="navs"><a href="#Sponsor">Sponsor</a></div>
 			<div class="navs"><a href="#FAQs">FAQ</a></div>
-			<div class="navs">
-				<span><a href="login">Regis | Login</a></span>
-			</div>
 			<div class="navs"><a href="#Contact-us">Contact Us</a></div>
+			<div class="navs"><a href="Login.html">Login</a></div>
+			<div class="navs" id="Regis"><a href="Registration.html">Sign Up</a></div>
 		</div>
 	</div>
 	<div class="container">
 		<div class="title">
-			<h1>A MOUNTAIN EXPERIENCES AWAITS YOU</h1>
+			<h1>A MOUNTAIN OF EXPERIENCES AWAITS YOU</h1>
+			<div class="title-contain">
+				<img src="/style/assets/map-marker-alt-solid.svg" alt="">
+				<h3>Sekre</h3>
+			</div>
+			<div class="title-contain">
+				<img src="/style/assets/calendar-alt-regular.svg" alt="">
+				<h3>11 - 13 July 2020</h3>
+			</div>
 		</div>
 		<img src="/style/assets/Learning_illustration.png" alt="">
 	</div>
@@ -47,25 +58,32 @@
 <section class="landing" id="About">
 	<img src="/style/assets/About_illustration1.png" alt="">
 		<div class="text">
-			<div class="title">
+			<div class="titles">
 				<h1>What is Bootcamp?</h1>
 				<div class="kotak"></div>
 			</div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In laboriosam dolores distinctio sunt porro unde error, veritatis, autem, quibusdam excepturi aperiam ea eius ipsa. Ex tempore numquam, error laborum molestiae?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae nulla voluptatum</p>
-			<p>perspiciatis fugiat sequi ratione cupiditate, perferendis nostrum ipsam, saepe reprehenderit tenetur recusandae libero omnis iusto ipsa ducimus, quibusdam blanditiis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. A culpa voluptatem, maxime</p> 
-			<p>consequuntur nesciunt molestiae nemo voluptate! voluptatum, quo distinctio incidunt pariatur dolorem ad fugit assumenda illo animi eos eligendi</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus amet ratione quo soluta doloribus possimus, recusandae hic vitae commodi sapiente quibusdam, atque omnis error delectus eveniet alias voluptatibus fuga aut.</p>
 		</div>
 </section>
-
+<section class="bncc">
+	<span><h1>What is BNCC ?</h1></span>
+	<p>
+		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore dolores modi eius ipsa a consequatur doloremque autem! Commodi illum, nesciunt excepturi voluptatibus eligendi, inventore voluptatem quos, voluptate magni harum illo unde consequatur repudiandae praesentium ratione expedita quasi tenetur. Ipsam nesciunt voluptatem quidem illum molestiae ullam rerum iusto sapiente tempore nulla dolorem, consequatur alias atque quis officiis at ipsum. Magni sequi iste suscipit possimus quam! Pariatur optio inventore cupiditate earum nulla.
+	</p>
+	<img src="/style/assets/BNCC.png" alt="">
+	<p>
+		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident animi, perspiciatis natus quam doloribus vel? Atque adipisci nostrum magnam. Voluptas delectus facilis quidem praesentium accusantium ea eum, enim eveniet rerum culpa omnis, minima quisquam hic velit neque molestias est laudantium aut. Quidem odio, doloribus sunt aliquam, aspernatur voluptatum laudantium cum tempore sit cumque iure omnis molestiae aut. Sunt, labore tempora molestiae beatae fugit asperiores iusto, esse ea eum, ut quos!
+	</p>
+</section>
 <section class="why">
 	<div class="text">
-		<div class="title">
+		<div class="titles">
 			<h1>Why You Should Join Us ?</h1>
 			<div class="kotak"></div>
 		</div>
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit suscipit animi illo, facere modi eos quo repellendus veritatis labore distinctio fuga eveniet, vero voluptate, ullam reiciendis maxime itaque deleniti hic? Delectus voluptas, reprehenderit quaerat qui aut atque odit inventore cum!</p>
 		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum sunt iure inventore quo facilis nemo voluptates. Ratione, ullam quidem, perferendis reiciendis dolorum consectetur ipsa provident, dolor numquam totam nihil officiis!</p> 
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum optio, totam dolor assumenda harum deleniti nulla quisquam minus tempore dolorum.</p>
 	</div>
 	<div id="carouselExampleIndicators" class="carousel slide caro" data-ride="carousel">
 		<ol class="carousel-indicators">
@@ -75,46 +93,41 @@
 		</ol>
 		<div class="carousel-inner">
 		  <div class="carousel-item active">
-
-			<img class="d-block w-100" src="/style/assets/Carousel1.png" alt="First slide">
-			<!-- <div class="carousel-caption d-none d-md-block"> -->
-			  <!-- <h5>UI/UX</h5>
-			  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, natus?</p> -->
-			<!-- </div> -->
+			  <div class="caro-in">
+				<h3>UI/UX</h3>
+				<img class="d-block w-100" src="/style/assets/Carousel1.png" alt="First slide">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quibusdam.</p>
+			  </div>
 		  </div>
 		  <div class="carousel-item">
-
-			<img class="d-block w-100" src="/style/assets/Carousel2.png" alt="Second slide">
-			
-			<!-- <div class="arousel-caption d-none d-md-block"> -->
-			  <!-- <h5>IT</h5>
-			  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, molestiae!</p> -->
-			<!-- </div> -->
+			<div class="caro-in">
+				<h3>Information Technology</h3>
+				<img class="d-block w-100" src="/style/assets/Carousel2.png" alt="First slide">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quibusdam.</p>
+			  </div>
 		  </div>
 		  <div class="carousel-item">
-
-			<img class="d-block w-100" src="/style/assets/Carousel3.png" alt="Third slide">
-
-			<!-- <div class="carousel-caption d-none d-md-block"> -->
-			  <!-- <h5>Business</h5>
-			  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, officia.</p> -->
-			<!-- </div> -->
+			<div class="caro-in">
+				<h3>Business</h3>
+				<img class="d-block w-100" src="/style/assets/Carousel3.png" alt="First slide">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quibusdam.</p>
+			  </div>
 		  </div>
 		</div>
 		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
 		  <img src="/style/assets/arrow-circle-left-solid.svg" alt="">
 		  <span class="sr-only">Previous</span>
 		</a>
 		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
 		  <img src="/style/assets/arrow-circle-right-solid.svg" alt=""> 
 		  <span class="sr-only">Next</span>
 		</a>
 	</div>
 </section>
 <div class="seg">
-	<img src="/style/assets/Whysegement.png" alt="">
+	<img src="/style/assets/seg.png" alt="">
 </div>
 <section class="sponsor" id="Sponsor">
 	<span><h2>Platinum Sponsor</h2></span>
@@ -151,102 +164,114 @@
 		<a href=""><img src="/style/assets/Carousel1.png" alt=""></a>
 	</div>
 </section>
-
-<section class="map">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4551138405604!2d106.78301300510563!3d-6.203538001246933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6c4a8e09f5d%3A0x29720d62d8b976c5!2sBina%20Nusantara%20Computer%20Club!5e0!3m2!1sen!2sid!4v1577065123992!5m2!1sen!2sid" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-</section>
-
+<div class="seg">
+	<img src="/style/assets/seg.png" alt="" style="transform: rotate(180deg);">
+</div>
 <section class="FAQs" id="FAQs">
   	<div class="faq-page">
-
-			<h1>FAQ</h1>
-		<div class="faq">
-			<div class="faq-left">
-				<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
-				<div class="faq-text">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
-				</div><br>
-				<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
-				<div class="faq-text">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
-				</div><br>
-				<button class="faq-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</button>
-				<div class="faq-text">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
-				</div><br>
-				<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
-				<div class="faq-text">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
-				</div><br>
-				<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
-				<div class="faq-text">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
-				</div><br>
-				<button class="faq-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</button>
-				<div class="faq-text">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
-				</div><br>
+		<h1>FAQ</h1>
+		<div class="faq-content">
+			<img src="/style/assets/Question.png" alt="">
+			<div class="faq">
+				<div class="faq-left">
+					<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
+					<div class="faq-text">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+					</div><br>
+					<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
+					<div class="faq-text">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+					</div><br>
+					<button class="faq-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</button>
+					<div class="faq-text">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+					</div><br>
+					<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
+					<div class="faq-text">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+					</div><br>
+					<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
+					<div class="faq-text">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+					</div><br>
+					<button class="faq-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</button>
+					<div class="faq-text">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+					</div><br>
+				</div>
+				<div class="faq-right">
+					<button class="faq-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</button>
+					<div class="faq-text">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+					</div><br>
+					<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
+					<div class="faq-text">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+					</div><br>
+					<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
+					<div class="faq-text">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+					</div><br>
+					<button class="faq-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</button>
+					<div class="faq-text">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+					</div><br>
+					<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
+					<div class="faq-text">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+					</div><br>
+					<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
+					<div class="faq-text">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+					</div><br>
+				</div>
 			</div>
-			<div class="faq-right">
-				<button class="faq-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</button>
-				<div class="faq-text">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
-				</div><br>
-				<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
-				<div class="faq-text">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
-				</div><br>
-				<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
-				<div class="faq-text">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
-				</div><br>
-				<button class="faq-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</button>
-				<div class="faq-text">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
-				</div><br>
-				<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
-				<div class="faq-text">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
-				</div><br>
-				<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
-				<div class="faq-text">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
-				</div><br>
-			</div>
+			<img src="/style/assets/Answer.png" alt="">
 		</div>
 	</div>
 </section>
+<section class="map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4551138405604!2d106.78301300510563!3d-6.203538001246933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6c4a8e09f5d%3A0x29720d62d8b976c5!2sBina%20Nusantara%20Computer%20Club!5e0!3m2!1sen!2sid!4v1577065123992!5m2!1sen!2sid" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</section>
 <section class="Contact" id="Contact-us">
+	<h1>Contact Us</h1>
 	<div class="contact-page">
         <div class="contact-left">
             <div class="social-media">
-			<img src="assets/Carousel1.png" alt="" width="250vw" height="250vh">
-                <a href="#" class="sosmed">
-                    <i class="far fa-envelope">
-                        <span style="font-size: 15px; margin: 0 5px;">@andrechrist012</span>
-                    </i>
-				</a>
-                <a href="#" class="sosmed">
-                    <i class="fab fa-instagram">
-                        <span style="font-size: 15px; margin: 0 5px;">@andrechrist012</span>
-                    </i>
-                </a>
-                <a href="#" class="sosmed">
-                    <i class="fab fa-facebook">
-                        <span style="font-size: 15px; margin: 0 5px;">@andrechrist012</span>
-                    </i>
-                </a>
-                <a href="#" class="sosmed">
-                    <i class="fab fa-twitter">
-                        <span style="font-size: 15px; margin: 0 5px;">@andrechrist012</span>
-                    </i>
-                </a>
+				<div>
+					<img src="/style/assets/Contact-us.png" alt="" width="250vw" height="250vh">
+				</div>
+                <div class="sosmed-content">
+					<div>
+						<a href="#" class="sosmed">
+							<i class="far fa-envelope">
+								<span>boot@camp.com</span>
+							</i>
+						</a>
+						<a href="#" class="sosmed">
+							<i class="fab fa-instagram">
+								<span>@bootcamp</span>
+							</i>
+						</a>
+					</div>
+					<div>
+						<a href="#" class="sosmed">
+							<i class="fab fa-facebook">
+								<span>@bootcamp</span>
+							</i>
+						</a>
+						<a href="#" class="sosmed">
+							<i class="fab fa-twitter">
+								<span>@bootcamp</span>
+							</i>
+						</a>
+					</div>
+				</div>
             </div>
         </div>
         <div class="contact-right">
             <div class="form-message">
-
-            <p>Contact Us</p>
+            	<h1>Send Us a Message</h1>
                 <form>
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Name">
@@ -262,11 +287,26 @@
 
 					</div>
 					<div class="form_submit">
-						<button type="submit" class="btn btn-outline-dark">submit</button> 
+						<button type="submit" class="btn btn-primary">Submit</button> 
 					</div>
                 </form>
             </div>
         </div>
+	</div>
+</section>
+<section class="foot">
+	<div class="foot-img">
+		<div class="foot-left">
+			<span><b>Powered by :</b></span>
+			<img src="/style/assets/Bootcamp.png" alt="">
+		</div>
+		<div class="foot-right">
+			<span><b>Organized by :</b></span>
+			<img src="/style/assets/Bootcamp.png" alt="">
+		</div>
+	</div>
+	<div class="foot-bottom">
+		<h6>&copy; 2019 Copyright Bootcamp</h6>
 	</div>
 </section>
 

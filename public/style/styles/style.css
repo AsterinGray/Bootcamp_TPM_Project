@@ -4,6 +4,11 @@ html,body{
 	font-family: verdana;
 	height:100%;
 	scroll-behavior: smooth;
+	background-color: #e6e7e8;
+}
+
+body p{
+	font-size: 1.2rem;
 }
 
 /*for fonts*/
@@ -13,6 +18,35 @@ html,body{
 	src:url('../assets/Fontania.ttf') format('truetype');
 }
 
+.loader{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: #e6e7e8;
+	z-index: 99;
+	font-family: "Fontania";
+}
+
+.loader h1{
+	width: 80%;
+	text-align: center;
+}
+
+.loader.hidden{
+	animation: fadeOut 3s;
+	animation-fill-mode: forwards;
+}
+
+.loader img{
+	animation: wobble 1s;
+	animation-delay: 0.5s;
+	width: 80%;
+}
+
 /*for header*/
 .header{
 	background-image: url('../assets/LandingBG.png');
@@ -20,8 +54,8 @@ html,body{
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 100%;
-	
 }
+
 .navsbar{
 	width:100%;
 	display: flex;
@@ -31,49 +65,52 @@ html,body{
 	justify-content: space-between;
 	align-items: center;
 	padding:1em 1em;
+	height: 10vh;
+	position: fixed;
+	z-index: 98;
+	background-color: #e6e7e8;
 }
 .navsbar .gambar > img{
 	width: 10em;
 	height: auto;
 }
+
 .navs-link{
 	font-size: 1.2em;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+}
+
+.navsbar.scrool{
+	background-color: #e6e7e8;
 }
 
 .navs a{
-	padding: 10px 10px;
-	text-decoration: none;
-	margin:0 10px;
-	transition: .4s;
-	color:black;
+	border-radius: 1rem;
+	margin: 1em .5em;
+	padding : .5em;
+	color: black;
 	font-weight: bold;
+	text-decoration: none;
+	transition: .4s;
 }
 
-.navs a:hover{
-	background-color:salmon;
+#Regis a{
+	border-radius: 1rem;
+	background-color:#00afef;
+	color: white;
+}
+
+.navs a:hover, #Regis a:hover{
+	background-color:#66e1ff;
 	color:white;
-	margin:0px;
-	padding-right: 1.5em;
-	padding-left: 1.5em;
-	border-radius: 1em;
 	transition: .4s;
 	text-decoration: none;
-}
-.navs span{
-	padding-top: 3px;
-	padding-bottom: 3px;
-	border:1px solid black;
-	border-radius: 1em;
-}
-.navs span a{
-	color:black;
 }
 
 .ham-bar{
 	display:none;
+	height: 10vh;
 }
 
 .ham{
@@ -98,15 +135,37 @@ html,body{
     flex-direction: row;
    	justify-content: space-around;
    	align-items: center;
-   	min-height: 100vh;
-   	overflow: hidden;
+   	min-height: 90vh;
    	width: 100%;
 }
-.container .title h1{
+.title{
 	font-family: Fontania;
-	max-width:11em;
+	width: 50%;
 	text-align: left;
 }
+
+.title h1{
+	/* margin: .5em; */
+	font-size: 3em;
+}
+
+title h1{
+	margin: 0;
+	font-size: 2em;
+}
+
+.title img{
+	width: 1em;
+	margin: 0 1em .5em 1em;
+}
+
+.title-contain{
+	display: flex;
+	align-items: left;
+	align-content: center;
+}
+
+
 .container img{
 	max-width: 35%;
     height: auto;
@@ -114,27 +173,36 @@ html,body{
 
 /*for landing*/
 
+.titles{
+	font-family: Fontania;
+	width: 100%;
+	text-align: left;
+	margin: 3em 0;
+}
+
 .landing{
 	display:flex;
 	flex-direction: row;
 	justify-content: space-around;
-	padding: 5em;
+	align-items: center;
+	padding: 2.5em;
+	background-color: white;
 }
 .landing > img{
 	max-width: 35%;
-    height: auto;
 }
 .landing .text{
 	width:50%;
 }
 .landing .kotak{
-	width:20vh;
+	width:40%;
 	height:5px;
 	background-color: deepskyblue;	
 }
 .landing h1{
 	color:black;
 	font-family: "Fontania";
+	font-size: 3rem;
 }
 .landing p{
 	color:black;
@@ -153,11 +221,37 @@ html,body{
 	padding: 1.5em 0;
 }
 
+.bncc{
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+}
+
+.bncc h1{
+	font-family: "Fontania";
+	font-size: 3rem;
+	border-bottom: 5px solid deepskyblue;
+	margin: 1em 0	;
+}
+
+.bncc p{
+	width: 80%;
+	text-align: center;
+}
+
+.bncc img{
+	width: 30%;
+}
+
 .why{
 	background-color: white;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	align-items: center;
 	padding: 5em;
 }
 
@@ -167,26 +261,43 @@ html,body{
 }
 
 .why .kotak{
-	width:20vh;
+	width:60%;
 	height:5px;
 	background-color: deepskyblue;	
 }
 
 .why h1{
 	font-family: Fontania;
+	font-size: 3rem;
 }
 
 .caro{
 	width: 50%;
+	height: auto;
+	box-shadow: 1em 1em 1em #e2e2e2;
+	margin: 0 1em;
 }
 
+.carousel-indicators li{
+    box-shadow: inset 1px 1px 1px 1px #00afef; 
+}
 
-.carousel-control-prev-icon , .carousel-control-next-icon{
-	display: none;
+.carousel-inner{
+	display: flex;
+	flex-direction: row;
 }
 
 .carousel-control-prev img , .carousel-control-next img{
 	width: 2em;
+}
+
+.caro-in{
+	text-align: center;
+	padding : 1em 0;
+}
+
+.caro-in h3{
+	font-family: "Fontania";
 }
 
 .seg img{
@@ -195,13 +306,13 @@ html,body{
 
 /*for Sponsor*/
 .sponsor{
-	background-color: #CAEBFB;
+	background-color: #e6e7e8;
 	background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	padding:4em;
+	padding:0 4em;
 }
 .sponsor .platinum, .sponsor .gold,.sponsor .silver,.sponsor .Media{
 	display: flex;
@@ -226,6 +337,8 @@ html,body{
 }
 .sponsor span h2{
 	font-size: 2.25rem;
+	font-family: "Fontania";
+	border-bottom: 5px solid deepskyblue;
 }
 
 .map iframe{
@@ -235,15 +348,13 @@ html,body{
 
 /* FAQ */
 .FAQs{
-	background-color: #CAEBFB;
+	background-color: white;
 	width:100%;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	min-height: 100%;
+	min-height: 100vh;
 }
 
 .faq-page{
@@ -258,7 +369,8 @@ html,body{
 
 .faq-page h1{
 	font-family: "Fontania";
-	padding: 2em;
+	margin: .5em;
+	font-size: 3rem;
 }
 
 .faq{
@@ -266,16 +378,32 @@ html,body{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around; 
-	padding: 1em;
+	padding: 2em 0;
+	width: 60%;
+	border-radius: 1em;
+}
+
+.faq-content{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: fit-content;
+}
+
+.faq-content img{
+	width: 20%;
+	height: 50%;
+	margin: 1em 0;
 }
 
 .faq-left , .faq-right{
-	width: 40%
+	width: 45%
 }      
 
 button.faq-title{
 	width: 100%;
-	background-color: rgb(214, 209, 209);
+	background-color: #b4b5b6;
 	border: none;
 	outline: none;
 	text-align: left;
@@ -283,6 +411,7 @@ button.faq-title{
 	padding: 12px;
 	cursor: pointer;
 	transition: 0.2s linear;
+	box-shadow: .5em -.5em .5em lightgray;
 }
 
 button.faq-title:after {
@@ -299,25 +428,31 @@ button.faq-title.is-open:after {
 		
 		
 button.faq-title:hover, button.faq-title.is-open{
-	background-color: rgb(211, 207, 207);
+	background-color: #00afef;
+	box-shadow: .5em -.5em .5em lightblue;
 }
 
 .faq-text{
-	padding: 0 10px;
-	border-left: 1px solid whitesmoke;
-	border-right: 1px solid whitesmoke;
+	padding: 0 .5em;
 	background-color: whitesmoke;
 	max-height: 0;
 	overflow: hidden;
 	transition: 0.5s ease-in-out;
+	box-shadow: .5em -.5em .5em lightblue;
 }
 
 .Contact{
-	background-image: url('../assets/FAQs.png');
+	background-color:white;
 	width:100%;
-	background-size: cover;
-	background-repeat: no-repeat;
 	min-height: 100%;
+	padding-bottom: 3em;
+}
+
+.Contact h1{
+	font-family: "Fontania";
+	text-align: center;
+	font-size: 3rem;
+	padding: 1em .5em 0 0;
 }
 
 .contact-page{
@@ -325,11 +460,23 @@ button.faq-title:hover, button.faq-title.is-open{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	height: 100%;
+	align-items: center;
+	height: fit-content;
 }
 
 .contact-left, .contact-right{
-	width: 40%;
+	width: 45%;
+}
+
+.contact-left{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-media img{
+	width: 100%;
+	height: auto;
 }
 
 .social-media{
@@ -354,25 +501,29 @@ button.faq-title:hover, button.faq-title.is-open{
 	color: rgb(105, 105, 105);
 }
 
-.sosmed{
-	padding: 10px 65px 0 0;
+.sosmed-content{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .form-message{
-	border: 1px solid whitesmoke;
+	border: 1px solid lightgray;
 	border-radius: 4%;
 	margin: 30px;
 	padding: 60px;
 	display: flex;
 	flex-direction: column;
-	background-color: whitesmoke;
+	background-color: #00afef;
+	box-shadow: .5em .5em .5em lightblue;
 }
 
-.form-message p{
-	font-size: 25px;
+.form-message h1{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: .5em 0;
+	color: white;
 }
 
 .form_submit{
@@ -381,11 +532,52 @@ button.faq-title:hover, button.faq-title.is-open{
 	align-items: center;
 }
 
+.foot{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
 
+.foot-img{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1em 2em;
+	background-color: lightskyblue;
+}
+
+.foot-left, .foot-right{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+.foot-left{
+	justify-self: left;
+}
+
+.foot-right{
+	justify-self: right;
+}
+
+.foot img{
+	width: 40%;
+}
+
+.foot-bottom{
+	background-color: deepskyblue;
+	text-align: center;
+	padding: 1em;
+	color:white;
+}
 
 
 @media only screen and (max-width: 900px)
 {
+	.loader h1{
+		font-size: 1em;	
+	}
+
 	.navsbar >.gambar>img#logo{
 		display:none;
 	}
@@ -437,14 +629,32 @@ button.faq-title:hover, button.faq-title.is-open{
     	overflow: hidden;
 	}
 
-	.container .title h1{
+	.title{
 		text-align: center;
+		width: 90%;
 		margin: 1em;
+	}
+
+	.title-contain{
+		justify-content: center;
 	}
 
 	.container img {
     	max-width: 80%;
 	}
+
+	.container h1{
+		font-size: 1.5em;
+	}
+
+	.container h3{
+		font-size: 1em;
+	}
+
+	.title-contain{
+		align-items: center;
+	}
+
 	.landing{
 		padding: 10px;
 		display:flex;
@@ -459,6 +669,7 @@ button.faq-title:hover, button.faq-title.is-open{
 	}
 	.landing h1{
 		text-align: center;
+		font-size: 3rem;
 	}
 	.landing .kotak{
 		margin:0.5em auto;
@@ -468,7 +679,7 @@ button.faq-title:hover, button.faq-title.is-open{
 	}
 
 	.why{
-		flex-direction: column-reverse;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		padding: 1em;
@@ -494,11 +705,22 @@ button.faq-title:hover, button.faq-title.is-open{
 		max-width: 18em;
 		margin:1.3em;
 	}
+
+	.faq-content{
+		flex-direction: column;
+	}
+
+	.faq-content img{
+		width: 50%;
+	}
+
+	.faq{
+		width: 80%;
+	}
 	
 	.contact-left, .contact-right{
 		width: 80%;
 	}
-
 
 	.sosmed{
 		padding: 10px 20px 0 20px;
@@ -622,4 +844,48 @@ button.faq-title:hover, button.faq-title.is-open{
 	}
 }
 
+@keyframes fadeOut{
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
 
+@keyframes wobble {
+from {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+15% {
+	-webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+	transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+}
+
+30% {
+	-webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+	transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+}
+
+45% {
+	-webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+	transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+}
+
+60% {
+	-webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+	transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+}
+
+75% {
+	-webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+	transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+}
+
+to {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+}
+
+  

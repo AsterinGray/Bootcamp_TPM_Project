@@ -31,6 +31,11 @@ html, body{
     margin: 5% 0;
 }
 
+.Login-Regis#Regis{
+    width: 80%;
+    padding: 0 1.5em;
+}
+
 .Login-Regis img{
     padding: 1em 0;
     width: 100%;
@@ -63,8 +68,35 @@ html, body{
     text-align: left;
 }
 
-.form h1 h3 {
-    margin: .5em .2em;
+.form#Regis{
+    width: 100%;
+}
+
+.form-col{
+    padding: 2em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form-left, .form-right{
+    width: 40%;
+    height: fit-content;
+}
+
+.sub{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec{
+    padding: .8em 0;
+}
+
+.sec h3{
+    border-bottom: skyblue 5px solid;
 }
 
 .form h1{
@@ -85,9 +117,26 @@ html, body{
     .Login-Regis{
         display: flex;
         flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .Login-Regis#Regis{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
     }
 
     .form{
         font-size: 15px;
+        width: 100%;
+    }
+
+    .form-col{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .form-left, .form-right{
+        width: 100%;
     }
 }
