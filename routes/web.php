@@ -27,3 +27,7 @@ Route::get('/group/create', 'GroupController@create');
 Route::post('/group', 'GroupController@store');
 Route::resource('groups', 'GroupController');
 Route::get('/group', 'GroupController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
