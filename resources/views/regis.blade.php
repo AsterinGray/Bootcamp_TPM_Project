@@ -15,26 +15,47 @@
             <div class="form">
                 <h1>Registration</h1>
                 <!-- <img src="assets/SignUp.png" alt="">  -->
-                <form class="need-validation">
+                <form class="need-validation" method="POST" action="{{ route('register') }}">
+                @csrf
                     <h3>Team</h3>
                     <div class="box-input form-group">
                         <!-- Username -->
-                        <label for="validationDefault01"></label>
-                        <input type="text" class="form-control" id="validationDefault01" placeholder="Username" required>
+                        <label for="validationDefault01">{{ __('Group Name') }}</label>
+                        <input id="name validationDefault01" placeholder="Group Name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+
+@error('name')
+    <span class="invalid-feedback" role="alert">
+        <strong>{{ $message }}</strong>
+    </span>
+@enderror
                     </div>
                     <div class="box-input form-group">
                         <!-- Email -->
                         <label for="validationDefault02 inputEmail1"></label>
-                        <input type="email" class="form-control" id="validationDefault02 InputEmail1" placeholder="Email" required>
+                        <input id="email validationDefault02 InputEmail1" type="email" placeholder="Email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+
+@error('email')
+    <span class="invalid-feedback" role="alert">
+        <strong>{{ $message }}</strong>
+    </span>
+@enderror
                     </div>
                     <div class="box-input form-group">
                         <!-- Password -->
                         <label for="validationDefault03 inputPassword1"></label>
                         <input type="password" class="form-control" id="validationDefault03 inputPassword1" placeholder="Password" required>
+                        <input id="password validationDefault03 inputPassword1" type="password" placeholder="Password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+
+@error('password')
+    <span class="invalid-feedback" role="alert">
+        <strong>{{ $message }}</strong>
+    </span>
+@enderror
+                    
                     </div>
                     <div class="box-input form-group">
                         <label for="validationDefault04 inputPassword2"></label>
-                        <input type="password" class="form-control" id="validationDefault04 inputPassword2" placeholder="Confirm Password" required>
+                        <input id="password-confirm validationDefault04 inputPassword2" type="password"  placeholder="Confirm Password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                     </div>
 
                     <h3>Leader</h3>

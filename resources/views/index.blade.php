@@ -35,8 +35,8 @@
 			<div class="navs"><a href="#Sponsor">Sponsor</a></div>
 			<div class="navs"><a href="#FAQs">FAQ</a></div>
 			<div class="navs"><a href="#Contact-us">Contact Us</a></div>
-			<div class="navs"><a href="Login.html">Login</a></div>
-			<div class="navs" id="Regis"><a href="Registration.html">Sign Up</a></div>
+			<div class="navs"><a href="login">Login</a></div>
+			<div class="navs" id="Regis"><a href="register">Sign Up</a></div>
 		</div>
 	</div>
 	<div class="container">
