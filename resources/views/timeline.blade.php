@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Timeline</title>
     <link rel="stylesheet" href="/style/styles/user-deskboard.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="/style/Bootstrap/css/bootstrap.min.css">
 </head>
 <body>
@@ -24,10 +25,10 @@
 			<img src="/style/assets/Bootcamp.png" alt="" class="logo" id="logo">
 		</div>
 		<div class="navs-link">
-			<div class="navs"><a href="{{url('userdb')}}">Home</a></div>
-			<div class="navs"><a href="Timeline.html#timeline">Timeline</a></div>
-			<div class="navs"><a href="{{url('timeline')}}">Rundown</a></div>
-			<div class="navs"><a href="{{url('index')}}">Logout</a></div>
+			<div class="navs"><a href="home">Home</a></div>
+			<div class="navs"><a href="timeline#timeline">Timeline</a></div>
+			<div class="navs"><a href="timeline#rundown">Rundown</a></div>
+			<div class="navs"><a href="index.html">Logout</a></div>
 		</div>
 	</div>
   </section>
@@ -268,8 +269,8 @@
     </div>
 </section>
 </section>
-    <script src="jquery.js"></script>
-    <script src="Bootstrap/js/bootstrap.min.js"></script>
-    <script src="user.js"></script>
+    <script src="/style/jquery.js"></script>
+    <script src="/style/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="/style/user.js"></script>
 </body>
 </html>
