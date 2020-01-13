@@ -21,7 +21,10 @@ Route::get('/regis', function () {
     return view('regis');
 });
 Route::get('/userdb', function () {
-    return view('userdb');
+    return view('user-db');
+});
+Route::get('/timeline', function () {
+    return view('timeline');
 });
 Route::get('/group/create', 'GroupController@create');
 Route::post('/group', 'GroupController@store');
