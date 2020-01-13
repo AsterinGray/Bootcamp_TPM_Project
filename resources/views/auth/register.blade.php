@@ -234,7 +234,7 @@
                                 <div class=" form-group">
                                     <!-- Member2 DOB -->
                                     <label for="validationDefault28">Date of Birth</label>
-                                    <input name="dob" type="text" class="form-control" onfocus="(this.type='date')"id="validationDefault28" placeholder="Date of Birth" required>
+                                    <input name="dob2" type="text" class="form-control" onfocus="(this.type='date')"id="validationDefault28" placeholder="Date of Birth" required>
                                 </div>
                                 <div class="form-group input-group">
                                     <!-- Leader Test -->
