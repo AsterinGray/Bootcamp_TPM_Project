@@ -26,14 +26,12 @@
         <th>KTP</th>
         <th>CV</th>
         <th>Score</th>
-        <th>Action</th>
 </tr>
 
 </thead>
 
 <tbody>
 @foreach($groups as $group)
-<td>Leader</td>
 <tr>
         <td>{{$group->name}}</td>
         <td>{{$group->address}}</td>
@@ -68,11 +66,38 @@
         <td>
         [TODO: actions]
         </td>
+
+</tr>
+@endforeach
+</tbody>
+
+</table>
+
+
+<h3>Member 1</h3>
+<table>
+
+<thead>
+
+<tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Email</th>
+        <th>DOB</th>
+        <th>Phone</th>
+        <th>Line</th>
+        <th>Git</th>
+        <th>KTP</th>
+        <th>CV</th>
+        <th>Score</th>
 </tr>
 
-<td>Member1</td>
+</thead>
+
+<tbody>
+@foreach($groups as $group)
 <tr>
-     <td>{{$group->name1}}</td>
+        <td>{{$group->name1}}</td>
         <td>{{$group->address1}}</td>
         <td>{{$group->email1}}/</td>
         <td>{{$group->dob1}}/</td>
@@ -107,10 +132,36 @@
         </td>
 
 </tr>
+@endforeach
+</tbody>
 
-<td>Member2</td>
+</table>
+<br>
+<br>
+
+<h3>Member 2</h3>
+<table>
+
+<thead>
+
 <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Email</th>
+        <th>DOB</th>
+        <th>Phone</th>
+        <th>Line</th>
+        <th>Git</th>
+        <th>KTP</th>
+        <th>CV</th>
+        <th>Score</th>
+</tr>
 
+</thead>
+
+<tbody>
+@foreach($groups as $group)
+<tr>
         <td>{{$group->name2}}</td>
         <td>{{$group->address2}}</td>
         <td>{{$group->email2}}/</td>
@@ -144,9 +195,8 @@
         <td>
         [TODO: actions]
         </td>
+
 </tr>
-<br>
-<br>
 @endforeach
 </tbody>
 
