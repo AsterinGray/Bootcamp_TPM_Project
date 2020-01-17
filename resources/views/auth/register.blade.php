@@ -15,7 +15,6 @@
         <div class="Login-Regis" id="Regis">
             <div class="form" id="Regis">
                 <h1>Registration</h1>
-                <!-- <img src="assets/SignUp.png" alt="">  -->
                 <form class="need-validation" method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
                     @csrf
                     <h3>Team</h3>
@@ -25,7 +24,6 @@
                                 <!-- Username -->
                                 <label for="validationDefault01">Username</label>
                                 <input name="name" type="text" class="form-control @error('name') is-invalid @enderror" id="name validationDefault01" placeholder="Username" value="{{ old('name') }}" required autocomplete="name" autofocus >
-                                <!-- <input id="name validationDefault01" placeholder="Group Name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus> -->
                                 @error('name')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -36,7 +34,6 @@
                                 <!-- Email -->
                                 <label for="validationDefault02 inputEmail1">Email</label>
                                 <input type="email" class="form-control @error('email') is-invalid @enderror" id="email validationDefault02 InputEmail1" placeholder="Email" name="email" value="{{ old('email') }}" required autocomplete="email">
-                                <!-- <input id="email validationDefault02 InputEmail1" type="email" placeholder="Email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email"> -->
                                 @error('email')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -49,7 +46,6 @@
                                 <!-- Password -->
                                 <label for="validationDefault03 inputPassword1">Password</label>
                                 <input type="password" class="form-control @error('password') is-invalid @enderror" id="password validationDefault03 inputPassword1" placeholder="Password" name="password" required autocomplete="new-password">
-                                <!-- <input id="password validationDefault03 inputPassword1" type="password" placeholder="Password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password"> -->
                                 @error('password')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -59,7 +55,6 @@
                             <div class=" form-group">
                                 <label for="validationDefault04 inputPassword2">Confirm Password</label>
                                 <input type="password" class="form-control" id="password-confirm validationDefault04 inputPassword2" placeholder="Confirm Password" name="password_confirmation" required autocomplete="new-password">
-                                <!-- <input id="password-confirm validationDefault04 inputPassword2" type="password"  placeholder="Confirm Password" class="form-control" name="password_confirmation" required autocomplete="new-password"> -->
                             </div>
                         </div>
                     </div>
