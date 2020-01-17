@@ -26,10 +26,18 @@ Route::get('/userdb', function () {
 Route::get('/timeline', function () {
     return view('timeline');
 });
+Route::get('/admindb', function () {
+    return view('admindb');
+});
 Route::get('/group/create', 'GroupController@create');
 Route::post('/group', 'GroupController@store');
 Route::resource('groups', 'GroupController');
 Route::get('/group', 'GroupController@index');
+
+
+Route::delete('/group/{user}', 'GroupController@destroy');
+Route::get('/group/{user}/edit', 'GroupController@edit');
+Route::put('/group/{user}', 'GroupController@update');
 
 Auth::routes();
 

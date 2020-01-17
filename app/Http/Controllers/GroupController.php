@@ -122,7 +122,7 @@ class GroupController extends Controller
      */
     public function edit(Group $group)
     {
-        //
+        return view('edit', compact('user'));
     }
 
     /**
@@ -134,7 +134,8 @@ class GroupController extends Controller
      */
     public function update(Request $request, Group $group)
     {
-        //
+        $user->update($request->all());
+        return redirect('{{url()}}');
     }
 
     /**
@@ -145,6 +146,7 @@ class GroupController extends Controller
      */
     public function destroy(Group $group)
     {
-        //
+        $user->delete();
+        return redirect('{{url()}}');
     }
 }

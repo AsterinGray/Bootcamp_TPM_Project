@@ -36,8 +36,9 @@
                 <h1>DATA PARTICIPANT</h1>
             </div>
             <div class="content-bodi">
+                @foreach($users as $user)
                 <div class="tim">
-                    <h2>TIM A</h2>
+                    <h2>{{$user->name}}</h2>
                     <hr>
                 </div>
                 <div class="data">
