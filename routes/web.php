@@ -37,5 +37,6 @@ Route::get('/group', 'GroupController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::put('/edit/{user}', 'HomeController@update');
 Route::get('/edit', 'HomeController@edit');
 Route::delete('/home/{user}','HomeController@destroy')->name('user.delete');

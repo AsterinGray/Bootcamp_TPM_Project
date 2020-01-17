@@ -45,10 +45,10 @@
                 <div class="tim">
                     <h2>{{$user->name}}</h2>
                     <br>
-                    <form action="{{url('/edit')}}">
-                    <button type="submit" class="btn btn-warning" >Edit</button>
-                    </form>
-                    <br>
+                    <!-- <form action="{{url('/view')}}">
+                    <button type="submit" class="btn btn-info" >View</button>
+                    </form> -->
+                    
                     <form action="{{route('user.delete', $user)}}" method="POST">
                     @csrf
                     {{ method_field('DELETE') }}
