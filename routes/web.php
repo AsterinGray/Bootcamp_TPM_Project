@@ -29,6 +29,7 @@ Route::get('/timeline', function () {
 Route::get('/admindb', function () {
     return view('admindb');
 });
+
 Route::get('/group/create', 'GroupController@create');
 Route::post('/group', 'GroupController@store');
 Route::resource('groups', 'GroupController');

@@ -44,6 +44,7 @@
                 <div class="data">
                     
                 </div>
+                @endforeach
             </div>
         </div>
     </div>
