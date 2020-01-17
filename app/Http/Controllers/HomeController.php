@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,26 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $user = Auth::user();
+        $useremail = $user->email;
+
+        if ($useremail == "eeo@bncc.net"){
+
+            $datausers = User::all();
+
+            return view('admindb', compact('datausers'));
+        }
+        else{
+
         return view('home');
+
+        }
+    }
+
+    public function edit()
+    {
+        $users = Auth::user();
+
+        return view('edit', compact('users'));
     }
 }
