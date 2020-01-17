@@ -45,9 +45,16 @@
                 <div class="tim">
                     <h2>{{$user->name}}</h2>
                     <br>
-                    <button type="button" class="btn btn-warning">Edit</button>
+                    <form action="{{url('/edit')}}">
+                    <button type="submit" class="btn btn-warning" >Edit</button>
+                    </form>
                     <br>
-                    <button type="button" class="btn btn-danger">Delete</button>
+                    <form action="{{route('user.delete', $user)}}" method="POST">
+                    @csrf
+                    {{ method_field('DELETE') }}
+                    <button type="submit" class="btn btn-danger" >Delete</button>
+                    
+                    </form>
                     <hr>
                 </div>
                 <div class="data">

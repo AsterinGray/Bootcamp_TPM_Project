@@ -44,7 +44,14 @@ class HomeController extends Controller
     public function edit()
     {
         $users = Auth::user();
-
         return view('edit', compact('users'));
     }
+
+    public function destroy(Request $request, User $user)
+    {
+        $user->delete();
+        return redirect('/home');
+    }
+
+
 }
