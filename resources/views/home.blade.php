@@ -178,9 +178,13 @@
               <a type="text" class="form-control" placeholder="Date of Birth" readonly>{{ Auth::user()->dob2 }}</a>
           </div>
         </form>
+
       </div>
     </div>
   </div> 
+        <form action="{{url('/edit')}}">
+                  <button type="submit" class="btn btn-warning" >Edit</button>
+        </form>
 </section>
     <script src="/style/jquery.js"></script>
     <script src="/style/Bootstrap/js/bootstrap.min.js"></script>
