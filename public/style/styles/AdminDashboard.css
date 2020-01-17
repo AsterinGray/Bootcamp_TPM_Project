@@ -116,7 +116,7 @@ html, body{
     background-color: white;
     border-color: deepskyblue;
     padding: 1%;
-    width: 25%;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -130,6 +130,7 @@ html, body{
     font-weight: bold;
     font-size:30px;
 }
+
 .tim hr{
     width:80%;
     height:2px;
