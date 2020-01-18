@@ -48,16 +48,13 @@
                     <form action="{{route('view', $user)}}" method="GET">
                     <button class="btn btn-info">View</button>
                     </form>
-                    <!-- <br>
-                    <form action="{{url('/edit')}}">
-                  <button type="submit" class="btn btn-warning" >Edit</button>
-                 </form> -->
-                     <!-- <br> -->
-                    <!-- <form action="{{route('user.delete', $user)}}" method="POST">
+                     <br>
+                    <form action="{{route('user.delete', $user)}}" method="POST">
                     @csrf
                     {{ method_field('DELETE') }}
-                    <a type="submit" class="btn btn-danger" >Delete</a>
-                    </form> -->
+                    <button type="submit" class="btn btn-danger" >Delete</button>
+
+                    </form>
                 </div>
                 <div class="data">
 
