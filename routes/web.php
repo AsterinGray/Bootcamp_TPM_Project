@@ -40,3 +40,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::put('/edit/{user}', 'HomeController@update');
 Route::get('/edit', 'HomeController@edit');
 Route::delete('/home/{user}','HomeController@destroy')->name('user.delete');
+Route::get('/view/{user}', 'HomeController@show')->name('view');
+Route::get('/storage/scores/{id}/{filename}', function(){})->name('score');
+Route::get('/storage/ktps/{id}/{filename}', function(){})->name('ktp');
+Route::get('/storage/cvs/{id}/{filename}', function(){})->name('cv');
