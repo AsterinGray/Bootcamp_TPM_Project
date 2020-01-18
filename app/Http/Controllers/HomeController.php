@@ -107,11 +107,12 @@ class HomeController extends Controller
 
     }
 
-    public function destroy(User $user)
+    public function destroy(Request $request, User $user)
     {
         $user->delete();
         return redirect('/home');
     }
+    
     public function show(Request $request, User $user)
     {
         return view('/view', compact('user'));
