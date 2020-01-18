@@ -26,6 +26,9 @@ Route::get('/userdb', function () {
 Route::get('/timeline', function () {
     return view('timeline');
 });
+Route::get('/admindb', function () {
+    return view('admindb');
+});
 Route::get('/group/create', 'GroupController@create');
 Route::post('/group', 'GroupController@store');
 Route::resource('groups', 'GroupController');
@@ -34,3 +37,10 @@ Route::get('/group', 'GroupController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::put('/edit/{user}', 'HomeController@update');
+Route::get('/edit', 'HomeController@edit');
+Route::delete('/home/{user}','HomeController@destroy')->name('user.delete');
+Route::get('/view/{user}', 'HomeController@show')->name('view');
+Route::get('/storage/scores/{id}/{filename}', function(){})->name('score');
+Route::get('/storage/ktps/{id}/{filename}', function(){})->name('ktp');
+Route::get('/storage/cvs/{id}/{filename}', function(){})->name('cv');

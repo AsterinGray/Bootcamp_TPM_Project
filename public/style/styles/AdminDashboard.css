@@ -123,6 +123,7 @@ html, body{
     justify-content: space-around;
     align-content: center;
     margin-top: 2%;
+    margin: auto;
 }
 .tim h2{
     color:deepskyblue;
@@ -130,8 +131,15 @@ html, body{
     font-weight: bold;
     font-size:30px;
 }
+
 .tim hr{
     width:80%;
     height:2px;
     background-color: deepskyblue;
+}
+.tim form{
+    margin:auto;
+}
+.tim a{
+    margin:auto;
 }

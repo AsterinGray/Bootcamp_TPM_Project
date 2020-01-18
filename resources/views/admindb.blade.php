@@ -24,7 +24,12 @@
                     <a href=""><img src="/style/assets/file-invoice-solid.svg" alt=""></a>
                 </div>
                 <div class="tol">
-                  <a href=""><img src="/style/assets/sign-out-alt-solid.svg" alt=""></a>  
+                  <a href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                 document.getElementById('logout-form').submit();"><img src="/style/assets/sign-out-alt-solid.svg" alt=""></a>
+                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                 @csrf
+                </form>  
                 </div>
             </div>
         </div>
@@ -35,15 +40,27 @@
             <div class="title-bodi">
                 <h1>DATA PARTICIPANT</h1>
             </div>
+            @foreach($datausers as $user)
             <div class="content-bodi">
                 <div class="tim">
-                    <h2>TIM A</h2>
+                    <h2>{{$user->name}}</h2>
                     <hr>
+                    <form action="{{route('view', $user)}}" method="GET">
+                    <button class="btn btn-info">View</button>
+                    </form>
+                     <br>
+                    <form action="{{route('user.delete', $user)}}" method="POST">
+                    @csrf
+                    {{ method_field('DELETE') }}
+                    <button type="submit" class="btn btn-danger" >Delete</button>
+
+                    </form>
                 </div>
                 <div class="data">
-                    
+
                 </div>
             </div>
+            @endforeach
         </div>
     </div>
 </section>
