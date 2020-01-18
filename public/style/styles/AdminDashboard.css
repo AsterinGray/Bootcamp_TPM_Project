@@ -116,13 +116,14 @@ html, body{
     background-color: white;
     border-color: deepskyblue;
     padding: 1%;
-    width: 100%;
+    width: 25%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-content: center;
     margin-top: 2%;
+    margin: auto;
 }
 .tim h2{
     color:deepskyblue;
@@ -135,4 +136,10 @@ html, body{
     width:80%;
     height:2px;
     background-color: deepskyblue;
+}
+.tim form{
+    margin:auto;
+}
+.tim a{
+    margin:auto;
 }
