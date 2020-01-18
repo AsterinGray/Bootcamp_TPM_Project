@@ -33,12 +33,12 @@ html,body{
 }
 
 .loader.hidden{
-	animation: fadeOut 3s;
+	animation: fadeOut 1s ease-in-out;
 	animation-fill-mode: forwards;
 }
 
 .loader img{
-	animation: wobble 1s;
+	animation: wobble 1s infinite;
 	animation-delay: 0.5s;
 	width: 80%;
 }
@@ -209,6 +209,24 @@ html,body{
 
 .landing .title, .why .title{
 	padding: 1.5em 0;
+}
+
+.bncc{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 5em;
+}
+
+.bncc h1{
+	font-family: Fontania;
+	font-size: 3rem;
+	border-bottom: 5px solid deepskyblue;
+}
+
+.bncc p{
+	padding: 2em;
 }
 
 .why{
