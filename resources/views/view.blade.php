@@ -67,14 +67,14 @@
                 <label>Git ID</label>
                 <a type="text" class="form-control" placeholder="Name" readonly>{{ $user->git }}</a>
             </div>
-          </form>
-        </div>
-        <div class="form-right">
-          <form>
             <div class="form-group">
                 <label>Phone Number</label>
                 <a type="text" class="form-control" placeholder="Phone Number" readonly>{{ $user->phone }}</a>
             </div>
+          </form>
+        </div>
+        <div class="form-right">
+          <form>
             <div class="form-group">
                 <label>Line ID</label>
                 <a type="text" class="form-control" placeholder="Line ID" readonly>{{ $user->line }}</a>
@@ -82,6 +82,18 @@
             <div class="form-group">
                 <label>Date of Birth</label>
                 <a type="text" class="form-control" placeholder="Date of Birth" readonly>{{ $user->dob }}</a>
+            </div>
+            <div class="form-group">
+                <label>Test Score</label>
+                <a href="{{route('score', ['id' => $user->id, 'filename'=> $user->score])}}" class="btn btn-info form-control"  target="_blank">View</a>
+            </div>
+            <div class="form-group">
+                <label>KTP</label>
+                <a href="{{route('ktp', ['id' => $user->id, 'filename'=> $user->ktp])}}" class="btn btn-info form-control"  target="_blank">View</a>
+            </div>
+            <div class="form-group">
+                <label>CV</label>
+                <a href="{{route('cv', ['id' => $user->id, 'filename'=> $user->cv])}}" class="btn btn-info form-control"  target="_blank">View</a>
             </div>
           </form>
         </div>
@@ -109,14 +121,14 @@
                 <label>Git ID</label>
                 <a type="text" class="form-control" placeholder="Name" readonly>{{ $user->git1 }}</a>
             </div>
-          </form>
-        </div>
-        <div class="form-right">
-          <form>
             <div class="form-group">
                 <label>Phone Number</label>
                 <a type="text" class="form-control" placeholder="Phone Number" readonly>{{ $user->phone1 }}</a>
             </div>
+          </form>
+        </div>
+        <div class="form-right">
+          <form>
             <div class="form-group">
                 <label>Line ID</label>
                 <a type="text" class="form-control" placeholder="Line ID" readonly>{{ $user->line1 }}</a>
@@ -124,6 +136,18 @@
             <div class="form-group">
                 <label>Date of Birth</label>
                 <a type="text" class="form-control" placeholder="Date of Birth" readonly>{{ $user->dob1 }}</a>
+            </div>
+            <div class="form-group">
+                <label>Test Score</label>
+                <a href="{{route('score', ['id' => $user->id, 'filename'=> $user->score1])}}" class="btn btn-info form-control"  target="_blank">View</a>
+            </div>
+            <div class="form-group">
+                <label>KTP</label>
+                <a href="{{route('ktp', ['id' => $user->id, 'filename'=> $user->ktp1])}}" class="btn btn-info form-control"  target="_blank">View</a>
+            </div>
+            <div class="form-group">
+                <label>CV</label>
+                <a href="{{route('cv', ['id' => $user->id, 'filename'=> $user->cv1])}}" class="btn btn-info form-control"  target="_blank">View</a>
             </div>
           </form>
         </div>
@@ -151,14 +175,14 @@
               <label>Git ID</label>
               <a type="text" class="form-control" placeholder="Name" readonly>{{ $user->git2 }}</a>
           </div>
-        </form>
-      </div>
-      <div class="form-right">
-        <form>
           <div class="form-group">
               <label>Phone Number</label>
               <a type="text" class="form-control" placeholder="Phone Number" readonly>{{ $user->phone2 }}</a>
           </div>
+        </form>
+      </div>
+      <div class="form-right">
+        <form>
           <div class="form-group">
               <label>Line ID</label>
               <a type="text" class="form-control" placeholder="Line ID" readonly>{{ $user->line2 }}</a>
@@ -167,6 +191,18 @@
               <label>Date of Birth</label>
               <a type="text" class="form-control" placeholder="Date of Birth" readonly>{{ $user->dob2 }}</a>
           </div>
+          <div class="form-group">
+                <label>Test Score</label>
+                <a href="{{route('score', ['id' => $user->id, 'filename'=> $user->score1])}}" class="btn btn-info form-control"  target="_blank">View</a>
+            </div>
+            <div class="form-group">
+                <label>KTP</label>
+                <a href="{{route('ktp', ['id' => $user->id, 'filename'=> $user->ktp1])}}" class="btn btn-info form-control"  target="_blank">View</a>
+            </div>
+            <div class="form-group">
+                <label>CV</label>
+                <a href="{{route('cv', ['id' => $user->id, 'filename'=> $user->cv1])}}" class="btn btn-info form-control"  target="_blank">View</a>
+            </div>
         </form>
 
       </div>
