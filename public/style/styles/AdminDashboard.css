@@ -62,8 +62,8 @@ html, body{
     border-width: 1.75px;
     border-radius: 15px;
 }
-.tool .tol:first-child{
-    background-color: white;
+.tool .aktif{
+    background-color: rgb(175, 175, 175);
 }
 .tool .tol:hover{
     background-color: white;

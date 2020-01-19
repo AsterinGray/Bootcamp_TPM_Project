@@ -85,27 +85,27 @@
                                     <label for="validationDefault11">Date of Birth</label>
                                     <input name="dob" type="text" class="form-control" onfocus="(this.type='date')"id="validationDefault11" placeholder="Date of Birth" value="{{$users->dob}}"required>
                                 </div>
-                                <!-- <div class="form-group input-group">
+                                <div class="form-group input-group">
 
                                     <div class="custom-file">
-                                    <input name="score" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" value="{{$users->score}}" required>
+                                    <input name="score" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" value="{{$users->score}}" >
                                     <label class="custom-file-label" for="inputGroupFile01">Upload your Test Result</label>
                                     </div>
                                 </div>
                                 <div class="form-group input-group">
 
                                     <div class="custom-file">
-                                    <input name="ktp" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" value="{{$users->ktp}}"required>
+                                    <input name="ktp" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" value="{{$users->ktp}}">
                                     <label class="custom-file-label" for="inputGroupFile01">Upload your ID Card</label>
                                     </div>
                                 </div>
                                 <div class="form-group input-group">
 
                                     <div class="custom-file">
-                                    <input name="cv" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" value="{{$users->cv}}"required>
+                                    <input name="cv" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" value="{{$users->cv}}">
                                     <label class="custom-file-label" for="inputGroupFile01">Upload your CV</label>
                                     </div>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -151,27 +151,27 @@
                                     <label for="validationDefault19">Date of Birth</label>
                                     <input name="dob1" type="text" class="form-control" onfocus="(this.type='date')"id="validationDefault19" placeholder="Date of Birth" value="{{$users->dob1}}" required>
                                 </div>
-                                <!-- <div class="form-group input-group">
+                                <div class="form-group input-group">
 
                                     <div class="custom-file">
-                                    <input name="score1" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" value="{{$users->score1}}" required>
+                                    <input name="score1" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" value="{{$users->score1}}">
                                     <label class="custom-file-label" for="inputGroupFile01">Upload your Test Result</label>
                                     </div>
                                 </div>
                                 <div class="form-group input-group">
 
                                     <div class="custom-file">
-                                    <input name="ktp1" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" value="{{$users->ktp1}}" required>
+                                    <input name="ktp1" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" value="{{$users->ktp1}}">
                                     <label class="custom-file-label" for="inputGroupFile01">Upload your ID Card</label>
                                     </div>
                                 </div>
                                 <div class="form-group input-group">
 
                                     <div class="custom-file">
-                                    <input name="cv1" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" value="{{$users->cv1}}" required>
+                                    <input name="cv1" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" value="{{$users->cv1}}">
                                     <label class="custom-file-label" for="inputGroupFile01">Upload your CV</label>
                                     </div>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -217,27 +217,27 @@
                                     <label for="validationDefault28">Date of Birth</label>
                                     <input name="dob2" type="text" class="form-control" onfocus="(this.type='date')"id="validationDefault28" placeholder="Date of Birth" value="{{$users->dob2}}" required>
                                 </div>
-                                <!-- <div class="form-group input-group">
+                                <div class="form-group input-group">
 
                                     <div class="custom-file">
-                                    <input name="score2" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" value="{{$users->score2}}" required>
+                                    <input name="score2" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" value="{{$users->score2}}">
                                     <label class="custom-file-label" for="inputGroupFile01">Upload your Test Result</label>
                                     </div>
                                 </div>
                                 <div class="form-group input-group">
 
                                     <div class="custom-file">
-                                    <input name="ktp2" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" value="{{$users->ktp2}}" required>
+                                    <input name="ktp2" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" value="{{$users->ktp2}}">
                                     <label class="custom-file-label" for="inputGroupFile01">Upload your ID Card</label>
                                     </div>
                                 </div>
                                 <div class="form-group input-group">
 
                                     <div class="custom-file">
-                                    <input name="cv2" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" value="{{$users->cv2}}" required>
+                                    <input name="cv2" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" value="{{$users->cv2}}">
                                     <label class="custom-file-label" for="inputGroupFile01">Upload your CV</label>
                                     </div>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
                     </div>

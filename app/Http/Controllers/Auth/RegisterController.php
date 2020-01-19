@@ -151,6 +151,11 @@ class RegisterController extends Controller
             request()->file('cv2')->storeAs('cvs', $user->id.'/'.$cv2, '');
             $user->update(['cv2'=>$cv2]);
         }
+        if(request()->hasFile('payment')){
+            $payment = request()->file('payment')->getClientOriginalName();
+            request()->file('payment')->storeAs('cvs', $user->id.'/'.$payment, '');
+            $user->update(['payment'=>$payment]);
+        }
         return $user;
     }
 
