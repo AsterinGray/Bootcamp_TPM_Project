@@ -57,7 +57,8 @@
       <input name="payment" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" required>
       <label class="custom-file-label" for="inputGroupFile01">Upload your Payment</label>
       <br>
-      <button type="submit" class="btn btn-primary">Upload</button>
+      <br>
+      <button type="submit" class=" btnz btn btn-primary">Upload</button>
     </form>
     </div>
   </div>
@@ -225,10 +226,11 @@
     </div>
   </div> 
 </section>
-<div  class="btnz card-body">
+<div  class="btnz">
         <form action="{{url('/edit')}}">
-                  <button type="submit" class="btn btn-warning" >Edit</button>
+                  <button type="submit" class="btn btn-primary btn-lg " >Edit</button>
         </form>
+        <br><br><br><br><br>
 </div>
     <script src="/style/jquery.js"></script>
     <script src="/style/Bootstrap/js/bootstrap.min.js"></script>
