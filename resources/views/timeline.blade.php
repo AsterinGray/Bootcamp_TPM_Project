@@ -28,7 +28,14 @@
 			<div class="navs"><a href="home">Home</a></div>
 			<div class="navs"><a href="timeline#timeline">Timeline</a></div>
 			<div class="navs"><a href="timeline#rundown">Rundown</a></div>
-			<div class="navs"><a href="index.html">Logout</a></div>
+      <div class="navs"><a href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                 document.getElementById('logout-form').submit();">Logout</a>
+                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                 @csrf
+                </form>
+                    
+         </div>
 		</div>
 	</div>
   </section>
