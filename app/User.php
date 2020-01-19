@@ -47,6 +47,7 @@ class User extends Authenticatable
         "score2",
         "ktp2",
         "cv2",
+        "payment",
     ];
 
     /**

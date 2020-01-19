@@ -49,6 +49,7 @@ class CreateUsersTable extends Migration
             $table->string('score2');
             $table->string('ktp2');
             $table->string('cv2');
+            $table->string('payment');
             $table->rememberToken();
             $table->timestamps();
         });

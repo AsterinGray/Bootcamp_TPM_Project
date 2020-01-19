@@ -51,8 +51,14 @@
   <div class="payment">
     <h2>Payment Status: Paid / No Paid</h2>
     <div class="custom-file">
-      <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" required>
+    <form method="POST" action="{{url('payment/'.Auth::user()->id)}}" enctype="multipart/form-data">
+    @csrf
+    {{method_field('PUT')}}
+      <input name="payment" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" required>
       <label class="custom-file-label" for="inputGroupFile01">Upload your Payment</label>
+      <br>
+      <button type="submit" class="btn btn-primary">Upload</button>
+    </form>
     </div>
   </div>
   

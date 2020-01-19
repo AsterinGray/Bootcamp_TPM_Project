@@ -125,5 +125,23 @@ class HomeController extends Controller
 
     }
 
+    public function paymentUpdate(Request $request, User $user)
+    {
+
+        $data = $request->all();
+
+        if(request()->hasFile('payment')){
+            $payment = request()->file('payment')->getClientOriginalName();
+            request()->file('payment')->storeAs('payments', $user->id.'/'.$payment, '');
+            $user->update(['payment'=>$payment]);
+            $data['payment'] = $payment;
+        }
+        
+
+        $user->update($data);
+
+        return redirect('/home');
+    }
+
 
 }

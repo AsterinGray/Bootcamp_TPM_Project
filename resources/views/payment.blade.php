@@ -18,14 +18,20 @@
             </div>
             <div class="tool">
                 <div class="tol">
-                    <a href=""><img src="/style/assets/money-bill-wave-solid.svg" alt=""></a>
+                    <a href="home"><img src="/style/assets/file-invoice-solid.svg" alt=""></a>
+                </div>
+                <div class="tol aktif">
+                    <a href="payment"><img src="/style/assets/money-bill-wave-solid.svg" alt=""></a>
                 </div>
                 <div class="tol">
-                    <a href=""><img src="/style/assets/file-invoice-solid.svg" alt=""></a>
+                  <a href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                 document.getElementById('logout-form').submit();"><img src="/style/assets/sign-out-alt-solid.svg" alt=""></a>
+                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                 @csrf
+                </form>  
                 </div>
-                <div class="tol">
-                  <a href=""><img src="/style/assets/sign-out-alt-solid.svg" alt=""></a>  
-                </div>
+            </div>
             </div>
         </div>
     </div>
@@ -53,7 +59,7 @@
 							<td>{{$user->name}}</td>
                             @if($user->payment != null)
                             <td>Paid</td>
-                            <td><a href="" class="btn btn-info">View</a></td>
+                            <td><a href="{{route('payment.image', ['id' => $user->id, 'filename'=> $user->payment])}}" class="btn btn-info form-control"  target="_blank">View</a></td>
                             @else
                             <td>Unpaid</td>
                             <td>Unavailable</td>

@@ -17,11 +17,11 @@
                 <h1>Admin</h1>
             </div>
             <div class="tool">
-                <div class="tol">
-                    <a href=""><img src="/style/assets/money-bill-wave-solid.svg" alt=""></a>
+            <div class="tol aktif">
+                    <a href="home"><img src="/style/assets/file-invoice-solid.svg" alt=""></a>
                 </div>
                 <div class="tol">
-                    <a href=""><img src="/style/assets/file-invoice-solid.svg" alt=""></a>
+                    <a href="payment"><img src="/style/assets/money-bill-wave-solid.svg" alt=""></a>
                 </div>
                 <div class="tol">
                   <a href="{{ route('logout') }}"
