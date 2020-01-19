@@ -118,5 +118,12 @@ class HomeController extends Controller
         return view('/view', compact('user'));
     }
 
+    public function payment()
+    {
+        $datausers = User::all();
+        return view('payment', compact('datausers'));
+
+    }
+
 
 }
