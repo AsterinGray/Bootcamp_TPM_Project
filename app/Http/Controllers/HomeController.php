@@ -127,8 +127,20 @@ class HomeController extends Controller
 
     public function payment()
     {
-        $datausers = User::all();
-        return view('payment', compact('datausers'));
+        $user = Auth::user();
+        $useremail = $user->email;
+
+        if ($useremail == "eeo@bncc.net"){
+
+            $datausers = User::all();
+
+            return view('payment', compact('datausers'));
+        }
+        else{
+
+        return redirect('home');
+
+        }
 
     }
 
