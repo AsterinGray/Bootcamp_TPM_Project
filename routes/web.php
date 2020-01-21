@@ -17,12 +17,6 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('login');
 });
-Route::get('/regis', function () {
-    return view('regis');
-});
-Route::get('/userdb', function () {
-    return view('user-db');
-});
 Route::get('/timeline', function () {
     return view('timeline');
 });
