@@ -53,6 +53,9 @@ class RegisterController extends Controller
             'git'=> ['required', 'string'],
             'line'=> ['required', 'string'],
             'dob'=>['required'],
+            'score'=>['required', 'file'],
+            'ktp'=>['required', 'file'],
+            'cv'=>['required', 'file'],
             'name1'=> ['required', 'string'],
             'email1'=> ['required', 'string', 'email', 'max:255', 'unique:users'],
             'address1'=> ['required', 'string'],
@@ -60,6 +63,9 @@ class RegisterController extends Controller
             'git1'=> ['required', 'string'],
             'line1'=> ['required', 'string'],
             'dob1'=>['required'], 
+            'score1'=>['required', 'file'],
+            'ktp1'=>['required', 'file'],
+            'cv1'=>['required', 'file'],
             'name2'=> ['required', 'string'],
             'email2'=> ['required', 'string', 'email', 'max:255', 'unique:users'],
             'address2'=> ['required', 'string'],
@@ -67,6 +73,9 @@ class RegisterController extends Controller
             'git2'=> ['required', 'string'],
             'line2'=> ['required', 'string'],
             'dob2'=>['required'],
+            'score2'=>['required', 'file'],
+            'ktp2'=>['required', 'file'],
+            'cv2'=>['required', 'file'],
             
         ]);
     }
