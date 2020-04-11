@@ -7,10 +7,10 @@ This is the final project made as a result of us learning frontend and backend d
 
 Listed below are the members who contributed in this project:
 
-- [Raymond, Lead Dev, Front End](https://github.com/AsterinGray).
-- [Andre, Front End](https://github.com/andrechrist012).
-- [Nael, Front End](https://github.com/BrilyanNathanael).
-- [David, Back End](https://github.com/fxdavidh).
-- [Felisha, Back End](https://github.com/felishaww).
+- [Raymond Tiandinatan, Lead Developer, Front End](https://github.com/AsterinGray).
+- [Andre Christian, Front-End](https://github.com/andrechrist012).
+- [Brilyan Nathanael, Front-End](https://github.com/BrilyanNathanael).
+- [F.X.David, Back-End](https://github.com/fxdavidh).
+- [Felisha Miranda, Back-End](https://github.com/felishaww).
 
 Thank you so much for all our mentors and seniors who taught us many valuable things throughout the making of this project!
